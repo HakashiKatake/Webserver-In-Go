@@ -11,7 +11,7 @@ import (
 func main() {
 	router := mux.NewRouter()
 
-	router.HandleFunc("/books", func(w http.ResponseWriter, r *http.Request) {
+	router.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		// Handler code for listing books
 		json.NewEncoder(w).Encode("Hello world")
 	})
